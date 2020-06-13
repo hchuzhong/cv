@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>* {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }</style>
+
+  <style media="print">body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }</style>
+
+  <style>body {
+    }
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: rgb(0, 132, 255);
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .bio a{
+      border-bottom: none;
+      color: #666;
+    }</style>
+
+  <style>.projects {
+    }
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: rgb(0, 132, 255);
+    }
+
+    .projects > ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects > ol > li {
+      margin-bottom: 24px;
+    }
+
+    .projects > ol > li > header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects > ol > li h3 {
+      display: inline-block;
+    }</style>
+  <style>.skills {
+    }
+
+    .skills > .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills > .wrapper > :first-child {
+      margin-right: 24px;
+    }
+
+    .skills > .wrapper > ul {
+      color: #666;
+    }
+
+    .skills > .wrapper strong {
+      color: rgb(0, 132, 255);
+    }
+
+    .skills > .wrapper > ul > li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }</style>
+  <style>.openSource {
+    }
+
+    .openSource > h2 {
+    }
+
+    .openSource > ul {
+    }
+
+    .openSource > ul > li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {
+    }</style>
+  <style>.jobs > h2 {
+    }
+
+    .jobs > ol {
+    }
+
+    .jobs > ol > li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header > h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header > h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header > span {
+      font-size: 18px;
+      margin-left: auto;
+    }</style>
+
+
+  <style>@media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      .jobs header {
+        flex-direction: column;
+      }
+
+      .jobs header > h3,
+      .jobs header > h4,
+      .jobs header > span {
+        margin: 0;
+      }
+    }</style>
+
+</head>
+<body>
+<article>
+  <section class="bio">
+    <h1>黄楚忠</h1>
+    <p>
+      男 | 23岁 | 前端开发工程师
+    </p>
+    <p>
+      手机：<a href="tel:15521076402">15521076402</a> | 微信：15521076402 | 邮箱：<a href="mailto:hchuzhong@163.com">hchuzhong@163.com</a>
+    </p>
+  </section>
+
+  <section class="projects">
+    <h2>项目经历</h2>
+    <ol>
+      <li>
+        <header>
+          <h3>记账吧</h3>
+          <span>
+              <a href="https://github.com/hchuzhong/CountMoney">源码链接</a>
+              <a href="http://hchuzhong.xyz/morney-website/#/money">项目预览</a>
+            </span>
+        </header>
+        <p>记账吧是一款极简的记账应用，基于 <strong>Vue</strong> 和 <strong>TypeScript</strong> 实现，</p>
+        <p>使用 <strong>Vuex</strong> 进行全局数据管理，使用 <strong>Vue Router</strong> 实现页面间的跳转。</p>
+        <p>除了记账外，用户可以通过标签和备注对账目进行分类，还可以查看所记账目以天为单位进行统计的数据。</p>
+      </li>
+      <li>
+        <header>
+          <h3>Something Different 小程序</h3>
+          <span>
+              <a href="https://github.com/hchuzhong/something-different">源码链接</a>
+            </span>
+        </header>
+        <p>Something Different 小程序是一款能给微信头像添加<strong>图标</strong>的小程序。</p>
+        <p>添加的图标和被添加图标的图片都支持自定义，同时用户可以对图标进行<strong>移动、缩放和旋转</strong>的操作。</p>
+        <p>操作完图标后通过 <strong>canvas</strong> 标签将图标和图片叠加起来，并保存至用户手机上。</p>
+      </li>
+      <li>
+        <header>
+          <h3>海贼旗</h3>
+          <span>
+              <a href="https://github.com/hchuzhong/onePiece">源码链接</a>
+              <a href="http://hchuzhong.xyz/onePiece/dist/">项目预览</a>
+            </span>
+        </header>
+        <p>该项目使用了一系列的 <strong>CSS</strong> 代码来进行海贼旗的绘画,</p>
+        <p>用 JavaScript 同时将 CSS 代码写入页面和文本中，实时将页面中的 CSS 代码实现。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="openSource">
+    <h2>开源项目</h2>
+    <ul>
+      <li>
+        <header>
+          <h3>导航</h3>
+          <span>
+              <a href="https://github.com/hchuzhong/navigation">源码链接</a>
+              <a href="http://hchuzhong.xyz/navigation/dist/index.html">项目预览</a>
+          </span>
+        </header>
+        <p>使用 <strong>jQuery</strong> 实现的一个页面导航项目，用户可以自定义导航栏，且导航栏可以通过键盘上对应的按钮触发</p>
+      </li>
+      <li>
+        <header>
+          <h3>简易画板</h3>
+          <span>
+              <a href="https://github.com/hchuzhong/canvas">源码链接</a>
+              <a href="http://hchuzhong.xyz/canvas/dist/index.html">项目预览</a>
+            </span>
+        </header>
+        <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>技能</h2>
+    <div class="wrapper">
+      <ul>
+        <li>熟悉页面制作技巧，能将设计稿<strong>还原</strong></li>
+        <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+        <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 Vue CLI、Vue Router、Vuex 等</li>
+        <li>熟练掌握 React全家桶的使用，包括 create-react-app、ReactRouter、Redux 等</li>
+        <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+        <li>了解 <strong>TypeScript</strong> 的使用，我的记账吧项目就是 TS 实现的</li>
+        <li>了解 <strong>Webpack 的配置和优化</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="education">
+    <h2>教育经历</h2>
+    <p>
+      <span><time>2016年</time>~<time>2020年</time></span>
+      广东工业大学 本科
+    </p>
+  </section>
+
+</article>
+<script src="main.dfc06931.js"></script>
+</body>
+</html>
