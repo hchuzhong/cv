@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <title>我的简历</title>
-  <style>* {
+  <style>
+    * {
       box-sizing: border-box;
     }
 
@@ -21,18 +22,24 @@
       margin: 0 auto;
       overflow: auto;
       padding: 1em;
-    }</style>
+    }
+  
+</style>
 
-  <style media="print">body {
+  <style media="print">
+    body {
       margin: 0;
     }
 
     .page2 {
       page-break-before: always;
       margin-top: 30px;
-    }</style>
+    }
+  
+</style>
 
-  <style>body {}
+  <style>
+    body {}
 
     p {
       margin: .3em 0;
@@ -96,9 +103,12 @@
     .bio a {
       border-bottom: none;
       color: #666;
-    }</style>
+    }
+  
+</style>
 
-  <style>.projects {}
+  <style>
+    .projects {}
 
     .projects p {
       color: #666;
@@ -125,8 +135,11 @@
 
     .projects>ol>li h3 {
       display: inline-block;
-    }</style>
-  <style>.skills {}
+    }
+  
+</style>
+  <style>
+    .skills {}
 
     .skills>.wrapper {
       display: flex;
@@ -148,8 +161,11 @@
     .skills>.wrapper>ul>li {
       line-height: 1.2;
       margin-bottom: 8px;
-    }</style>
-  <style>.openSource {}
+    }
+  
+</style>
+  <style>
+    .openSource {}
 
     .openSource>h2 {}
 
@@ -165,8 +181,11 @@
       justify-content: space-between;
     }
 
-    .openSource h3 {}</style>
-  <style>.jobs>h2 {}
+    .openSource h3 {}
+  
+</style>
+  <style>
+    .jobs>h2 {}
 
     .jobs>ol {}
 
@@ -193,10 +212,13 @@
     .jobs header>span {
       font-size: 18px;
       margin-left: auto;
-    }</style>
+    }
+  
+</style>
 
 
-  <style>@media (max-width: 500px) {
+  <style>
+    @media (max-width: 500px) {
       body {
         margin: 0;
       }
@@ -219,7 +241,9 @@
       .jobs header>span {
         margin: 0;
       }
-    }</style>
+    }
+  
+</style>
 
 </head>
 
@@ -248,6 +272,18 @@
       <ol>
         <li>
           <header>
+            <h3>简单的个人博客</h3>
+            <span>
+              <a href="https://github.com/hchuzhong/myBlock">源码链接</a>
+              <a href="http://8.130.180.12:8080/">项目预览</a>
+            </span>
+          </header>
+          <p>使用 <strong>Next.js</strong> 框架实现的一个个人博客，</p>
+          <p>有登录、注册、新建博客、修改和删除博客的功能。</p>
+          <p>使用 <strong>TypeORM</strong> 做为数据库，利用 <strong>SSR</strong> 进行页面渲染。</p>
+        </li>
+        <li>
+          <header>
             <h3>记账吧(Vue)</h3>
             <span>
               <a href="https://github.com/hchuzhong/CountMoney">源码链接</a>
@@ -270,21 +306,6 @@
           <p>不同的是该项目使用的是 <strong>React</strong> 和 <strong>TypeScript</strong> 实现的，</p>
           <p>同时还使用了 <strong>React Router</strong>, <strong>自定义 Hooks</strong> 和 <strong>Webpack</strong> 等技术。</p>
           <p></p>
-        </li>
-        <li>
-          <header>
-            <h3>Figure Bed</h3>
-            <span>
-              <a href="https://github.com/hchuzhong/epic">源码链接</a>
-              <a href="https://hchuzhong.github.io/epic-website/#/">项目预览</a>
-            </span>
-          </header>
-          <p>Figure Bed 是使用 <strong>React</strong> 技术栈实现的一个在线图床，</p>
-          <p>核心功能包括：登录、注册、图片上传、图片大小定制、上传历史展示等。</p>
-          <p>使用 <strong>React-Router</strong> 进行页面跳转，使用 <strong>LeanCloud</strong> 做为后端保存数据，</p>
-          <p>
-            此外用到的技术还有：<strong>styled-components</strong>、<strong>Mobx</strong>、<strong>Antd</strong>
-            等。</p>
         </li>
         <li>
           <header>
@@ -330,14 +351,14 @@
       <h2>技能</h2>
       <div class="wrapper">
         <ul>
-          <li>熟悉页面制作技巧，能将设计稿<strong>还原</strong></li>
           <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
           <li>熟练掌握 <strong>Vue 全家桶</strong>的使用，包括 Vue CLI、Vue Router、Vuex 等</li>
           <li>掌握 React 的使用，掌握 React Hooks 的使用</li>
           <li>熟悉 <strong>ES6</strong> ，包括 let / Promise / await / 析构赋值</li>
           <li>熟练掌握 <strong>TypeScript</strong> 的使用，除了记账吧项目, 日常在工作中也是使用 TS 进行开发的</li>
           <li>了解 <strong>Webpack 的配置和优化</strong></li>
-          <li>熟练掌握基于 egret 引擎的 h5 游戏开发，对 egret 引擎的源码有一定的了解</li>
+          <li>熟练掌握基于 <strong>Egret</strong> 引擎的 h5 游戏开发，对 Egret 引擎的源码有一定的了解</li>
+          <li>掌握 Node.js，对后端知识有简单的了解 </li>
         </ul>
       </div>
     </section>
@@ -353,10 +374,16 @@
         </span>
       </header>
       <ul>
+        <li>项目一</li>
         <li>参与梦幻西游网页版的开发与维护,</li>
-        <li>该项目基于 <strong>TypeScript</strong> 和 <strong>egret</strong> 引擎开发, 是一款全平台的 h5 游戏。</li>
+        <li>该项目基于 <strong>TypeScript</strong> 和 <strong>Egret</strong> 引擎开发, 是一款全平台的 h5 游戏。</li>
         <li>能根据需求进行功能的迭代，同时负责了部分玩法框架的搭建。</li>
         <li>带领团队新人和帮助团队前端较弱的同事，提高他们的开发效率，同时参与了团队技术文章的撰写。</li>
+      </ul>
+      <ul>
+        <li>项目二(尚未发布)</li>
+        <li>参与公司内部新 h5 游戏（二次元卡牌手游）的开发，</li>
+        <li>负责游戏中多个玩法和通用模块的开发，同时也参与 code review，为团队的代码质量作出自己的贡献，</li>
       </ul>
     </section>
 
@@ -369,13 +396,13 @@
           <a href="https://github.com/hchuzhong?tab=repositories">我的 GitHub</a>
         </li>
         <li>
-          <a href="https://juejin.cn/user/4054654616607837">我的博客</a>，目前有 17 篇文章
+          <a href="https://juejin.cn/user/4054654616607837">我的掘金主页</a>，目前有 20 篇文章
         </li>
       </ul>
     </section>
 
   </article>
-  <script src="/main.1f19ae8e.js"></script>
+  <script src="/index.65c7a1e5.js"></script>
 </body>
 
 </html>
