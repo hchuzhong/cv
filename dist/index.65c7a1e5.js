@@ -35,5 +35,39 @@ const sleep = (ms)=>new Promise((resolve)=>setTimeout(resolve, ms)
     )
 ;
 run();
+/**
+ * obj = {
+ 'a.b.c': 1,
+ 'a.d': 2,
+ 'e': 3,
+}
+function transform(obj) {...}
+{
+  a: {
+     b: {
+       c: 1
+     },
+    d: 2
+   },
+   e: 3
+}
+ */ function transform(obj) {
+    const newObj = {
+    };
+    for(const key in obj){
+        const keyArr = key.slice(".");
+        if (keyArr.length === 0) newObj[key] = obj[key];
+        else {
+            const tempNewObj = newObj;
+            for(let i = 0; i < keyArr.length; i++){
+                const arrValue = keyArr[i];
+                if (!tempNewObj[arrValue]) tempNewObj[arrValue] = {
+                };
+                if (i === keyArr.length - 1) tempNewObj[arrValue] = obj[key];
+                tempNewObj = tempNewObj[arrValue];
+            }
+        }
+    }
+}
 
 //# sourceMappingURL=index.65c7a1e5.js.map
